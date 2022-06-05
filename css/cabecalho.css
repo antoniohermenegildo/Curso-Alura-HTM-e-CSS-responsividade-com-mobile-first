@@ -46,7 +46,6 @@
 
 .lista-menu {
     width: 70vw;
-    height: 100vh;
     background-color: var(--branco);
     z-index: 10;
 
