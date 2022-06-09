@@ -10,7 +10,6 @@
 
 .swiper-slide img {
     width: 100%;
-
 }
 
 .swiper-button-next,
@@ -21,4 +20,26 @@
 .swiper-pagination {
     position: initial;
     margin: .5em 0;
+}
+
+@media screen and (min-width: 768px) {
+    .carrosel__titulo {
+        font-size: 26px;
+        padding: 2em 0 0.5em 0;
+    }
+
+    .swiper-pagination {
+        padding: 2em 0 3em 0;
+    }
+
+    .swiper {
+        width: 70%;
+    }
+
+    .swiper-button-next,
+    .swiper-button-prev {
+        display: block;
+        top: 65%;
+    }
+
 }

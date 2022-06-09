@@ -171,6 +171,7 @@
             <div class="swiper-button-next"></div>
 
         </div>
+
         <div class="card">
             <div class="card__descricao">
                 <div class="descricao">
@@ -199,6 +200,9 @@
                 <a href="" class="topicos__link">Android</a>
             </li>
             <li class="topicos__item">
+                <a href="" class="topicos__link">OO</a>
+            </li>
+            <li class="topicos__item">
                 <a href="" class="topicos__link">Marketing Digital</a>
             </li>
             <li class="topicos__item">
@@ -211,34 +215,108 @@
                 <a href="" class="topicos__link">HTML & CSS</a>
             </li>
             <li class="topicos__item">
-                <a href="" class="topicos__link">Python</a>
-            </li>
-            <li class="topicos__item">
-                <a href="" class="topicos__link">OO</a>
-            </li>
-            <li class="topicos__item">
                 <a href="" class="topicos__link">Java</a>
+            </li>
+            <li class="topicos__item">
+                <a href="" class="topicos__link">Python</a>
             </li>
         </ul>
 
     </section>
 
     <section class="contato">
-        <h2 class="contato__titulo">Fique por dentro das novidades!</h2>
-        <p class="contato__texto">Atualizações de e-books, novos livros, promoções e outros.</p>
+        <div class="contato__descricao">
+            <h2 class="contato__titulo">Fique por dentro das novidades!</h2>
+            <p class="contato__texto">Atualizações de e-books, novos livros, promoções e outros.</p>
+        </div>
         <input type="email" class="contato__email" placeholder="Cadastre seu e-mail">
     </section>
 
     <hr />
 
-    <footer>
-        <h2 class="rodape">Grupo Alura</h2>
+    <footer class="rodape">
+        <h2 class="rodape__titulo">Grupo Alura</h2>
+        <ul class="lista-rodape">
+            <li class="lista-rodape__titulo">Educação</li>
+            <li class="lista-rodape__item">
+                <img src="./img/Caelum.png" alt="Logo da Caelum">
+                <a href="#" class="lista-rodape__link"> Caelum</a>
+            </li>
+            <li class="lista-rodape__item">
+                <img src="./img/CasaDoCodigo.png" alt="Logo da casa do Código">
+                <a href="#" class="lista-rodape__link"> Casa do código</a>
+            </li>
+        </ul>
+
+        <ul class="lista-rodape">
+            <li class="lista-rodape__titulo">Educação Online</li>
+            <li class="lista-rodape__item">
+                <img src="./img/Alura.png" alt="Logo da Alura">
+                <a href="#" class="lista-rodape__link"> Alura</a>
+            </li>
+            <li class="lista-rodape__item">
+                <img src="./img/AluraEmpresas.png" alt="Logo da Alura para empresa">
+                <a href="#" class="lista-rodape__link"> Alura Para Empresa</a>
+            </li>
+            <li class="lista-rodape__item">
+                <img src="./img/AluraLatam.png" alt="Logo da Alura Latam">
+                <a href="#" class="lista-rodape__link"> Alura LATAM</a>
+            </li>
+            <li class="lista-rodape__item">
+                <img src="./img/AluraStart.png" alt="Logo da Alura Start">
+                <a href="#" class="lista-rodape__link"> Alura Start</a>
+            </li>
+            <li class="lista-rodape__item">
+                <img src="./img/MusicDot.png" alt="Logo da MusicDot">
+                <a href="#" class="lista-rodape__link"> MusicDot</a>
+            </li>
+            <li class="lista-rodape__item">
+                <img src="./img/AluraLingua.png" alt="Logo da Alura Língua">
+                <a href="#" class="lista-rodape__link"> Alura Língua</a>
+            </li>
+            <li class="lista-rodape__item">
+                <img src="./img/PM3.png" alt="Logo da PM3">
+                <a href="#" class="lista-rodape__link"> PM3</a>
+            </li>
+        </ul>
+
+        <ul class="lista-rodape">
+            <li class="lista-rodape__titulo">COMUNIDADE</li>
+            <li class="lista-rodape__item">
+                <img src="./img/HipstersTech.png" alt="Logo da HipstersTech">
+                <a href="#" class="lista-rodape__link"> Hipsters ponto Tech</a>
+            </li>
+            <li class="lista-rodape__item">
+                <img src="./img/Scuba.png" alt="Logo da Scuba Dev">
+                <a href="#" class="lista-rodape__link"> Scuba Dev</a>
+            </li>
+            <li class="lista-rodape__item">
+                <img src="./img/Layers.png" alt="Logo da Layers ponto Tech">
+                <a href="#" class="lista-rodape__link"> Layers ponto Tech</a>
+            </li>
+            <li class="lista-rodape__item">
+                <img src="./img/LikeABoss.png" alt="Logo da Like a Boss">
+                <a href="#" class="lista-rodape__link"> Like a Boss</a>
+            </li>
+            <li class="lista-rodape__item">
+                <img src="./img/CarreiraSemFronteira.png" alt="Logo da Carreira sem Fronteira">
+                <a href="#" class="lista-rodape__link"> Carreira sem Fronteira</a>
+            </li>
+            <li class="lista-rodape__item">
+                <img src="./img/HipstersJobs.png" alt="Logo da Hipsters ponto Jobs">
+                <a href="#" class="lista-rodape__link"> Hipsters ponto Jobs</a>
+            </li>
+            <li class="lista-rodape__item">
+                <img src="./img/GUJ.png" alt="Logo da GUJ">
+                <a href="#" class="lista-rodape__link"> GUJ</a>
+            </li>
+        </ul>
     </footer>
 
     <!-- *******************JAVASCRIPT*************************** -->
     <script src="./js/swiper-bundle.min.js"></script>
     <script>
-        const swiper = new Swiper('.swiper', {
+        const swiper = new Swiper(".swiper", {
             spaceBetween: 20,
             centeredSlides: true,
             slidesPerView: 2,
@@ -246,7 +324,19 @@
                 el: '.swiper-pagination',
                 type: 'bullets',
             },
-            loop: true
+            loop: true,
+            breakpoints: {
+
+                768: {
+                    slidesPerView: 3,
+                    spaceBetween: 40,
+                },
+
+            },
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
         });
     </script>
 
