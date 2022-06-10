@@ -43,3 +43,23 @@
     }
 
 }
+
+@media screen and (min-width: 1024px) {
+    .swiper {
+        width: 45%;
+    }
+
+    .swiper-pagination {
+        padding: 1em 0 1em 0;
+    }
+
+    .swiper-button-next,
+    .swiper-button-prev {
+        display: block;
+        top: 50%;
+    }
+
+    .container__carrosel-card {
+        display: flex;
+    }
+}
